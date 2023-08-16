@@ -1,0 +1,46 @@
+.list
+  zoom: 1
+@media ( max-width: 2475px )
+  .container
+    max-width: 100%
+@media ( max-width: 2110px )
+  .list
+    zoom: 0.9
+@media ( max-width: 1900px )
+  .list
+    zoom: 0.8
+@media ( max-width: 1700px )
+  .list
+    zoom: 0.7
+@media ( max-width: 1200px )
+  .list
+    zoom: 0.6
+@media only screen and ( max-width: 790px )
+  .container
+    padding: 0!important
+  .list
+    zoom: 1
+    .list__item
+      width: 100%
+      height: auto
+      margin: 5px
+      .list__item__cities__popup
+        z-index: 1
+        max-height: 200px
+      .list__item__header
+        height: 30px
+        display: flex
+        justify-content: space-between
+        .item__likes
+          font-size: 18px
+          line-height: 30px
+      .item__description
+        height: 100px
+      .list__img
+        width: 100px
+        height: 100px
+        float: left
+      .item__data
+        display: flex
+        justify-content: space-between
+        font-size: 12px

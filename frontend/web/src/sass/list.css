@@ -1,3 +1,115 @@
+body {
+  background: #d2d2d2;
+  min-width: 360px;
+}
 
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.list .list__item {
+  background: #fbfcee;
+  position: relative;
+  float: left;
+  padding: 12px 27px;
+  margin: 24px;
+  width: 364px;
+  border-radius: 10px;
+  height: 614px;
+  color: #5d294f;
+}
+.list .list__item:hover {
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.list .list__item .list__item__cities__popup {
+  box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.1);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f3e6d3;
+  overflow: auto;
+  width: 100%;
+  padding: 13px 25px 25px 25px;
+  font-size: 25px;
+  text-decoration: underline;
+}
+.list .list__item .list__item__cities__popup a {
+  color: #5d294f;
+}
+.list .list__item .list__item__cities__popup img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+.list .list__item .item__cities {
+  float: left;
+  font-size: 25px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.list .list__item .item__cities:hover {
+  color: #6d395f;
+}
+.list .list__item .item__cities img {
+  width: 40px;
+  height: 40px;
+}
+.list .list__item .item__likes {
+  float: right;
+  font-size: 25px;
+  background: #f3e6d3;
+  border-radius: 11px;
+  padding: 0 10px;
+}
+.list .list__item .list__img {
+  width: 311px;
+  display: block;
+  height: 320px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.list .list__item .item__description {
+  text-align: center;
+}
+.list .list__item .item__description .item__name {
+  font-size: 39px;
+  font-weight: bold;
+  display: block;
+}
+.list .list__item .item__description .item__site {
+  font-size: 31px;
+  line-height: 20px;
+  font-weight: bold;
+  display: block;
+}
+.list .list__item .item__data {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.list .list__item .item__data .item__views {
+  margin-top: 11px;
+}
+.list .list__item .item__data .item__views img {
+  width: 42px;
+  height: 28px;
+}
+.list .list__item .item__data .item__verified {
+  margin-top: 13px;
+}
+.list .list__item .item__data .item__verified img {
+  width: 42px;
+  height: 31px;
+}
+.list .list__item .item__data .item__followings {
+  margin-top: 15px;
+}
+
+.container {
+  max-width: 85%;
+  padding: 0 15px 20px !important;
+}
 
 /*# sourceMappingURL=list.css.map */
