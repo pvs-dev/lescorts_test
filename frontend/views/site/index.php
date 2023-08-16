@@ -9,9 +9,12 @@ $this->title = 'test app';
     <div class="list">
         <?php foreach ($items as $item) { ?>
             <div class="list__item">
+                <div class="list__item__cities__popup">
+
+                </div>
                 <div class="list__item__header">
-                    <div class="item__cities">London, Lissabon</div>
-                    <div class="item__likes">54</div>
+                    <div class="item__cities"><img src="/pic/building.png" alt="img">London, Lissabon</div>
+                    <div class="item__likes">+54</div>
                 </div>
                 <img class="list__img" src="<?= $item['pic']?>" alt="pic">
                 <div class="item__description">

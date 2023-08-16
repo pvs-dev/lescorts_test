@@ -1,0 +1,107 @@
+body
+  background: #d2d2d2
+  min-width: 360px
+.list
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  .list__item
+    background: #fbfcee
+    float: left
+    padding: 12px 27px
+    margin: 24px
+    width: 364px
+    border-radius: 10px
+    height: 614px
+    color: #5d294f
+    &:hover
+      box-shadow: 10px 10px 20px 0 rgba(0,0,0,0.1)
+    .item__cities
+      float: left
+      font-size: 25px
+      text-decoration: underline
+      cursor: pointer
+      &:hover
+        color: #6d395f
+      img
+        width: 40px
+        height: 40px
+    .item__likes
+      float: right
+      font-size: 25px
+    .list__img
+      width: 311px
+      display: block
+      height: 320px
+      object-fit: contain
+      border-radius: 10px
+    .item__description
+      text-align: center
+      .item__name
+        font-size: 39px
+        font-weight: bold
+        display: block
+      .item__site
+        font-size: 31px
+        line-height: 20px
+        font-weight: bold
+        display: block
+
+    .item__data
+      text-align: center
+      font-size: 25px
+      font-weight: bold
+      .item__views
+        margin-top: 15px
+        img
+          width: 20px
+          height: 20px
+      .item__verified
+        margin-top: 13px
+        img
+          width: 20px
+          height: 20px
+      .item__followings
+        margin-top: 15px
+
+.container
+  max-width: 85%
+  padding: 0 15px 20px!important
+.list
+  zoom: 1
+@media ( max-width: 2475px )
+  .container
+    max-width: 100%
+@media ( max-width: 2110px )
+  .list
+    zoom: 0.9
+@media ( max-width: 1900px )
+  .list
+    zoom: 0.8
+@media ( max-width: 1700px )
+  .list
+    zoom: 0.7
+@media ( max-width: 1200px )
+  .list
+    zoom: 0.6
+@media only screen and ( max-width: 790px )
+  .container
+    padding: 0!important
+  .list
+    zoom: 1
+    .list__item
+      width: 100%
+      height: auto
+      margin: 5px
+      .list__item__header
+        height: 40px
+      .item__description
+        height: 100px
+      .list__img
+        width: 100px
+        height: 100px
+        float: left
+      .item__data
+        display: flex
+        justify-content: space-between
+        font-size: 12px
